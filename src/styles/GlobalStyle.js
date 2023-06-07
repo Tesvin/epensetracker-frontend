@@ -18,12 +18,12 @@ export const GlobalStyle = createGlobalStyle`
         --color-delete: #FF0000;
     }
 
-    body{
-        font-family: 'Nunito', sans-serif;
-        font-size: clamp(1rem, 1.5vw, 1.2rem);
-        overflow: hidden;
-        color: rgba(34, 34, 96, .6);
-    }
+     body{
+         font-family: 'Nunito', sans-serif;
+         font-size: clamp(1rem, 1.5vw, 1.2rem);
+    //     overflow: hidden;
+         color: rgba(34, 34, 96, .6);
+     }
 
     h1, h2, h3, h4, h5, h6{
         color: var(--primary-color);

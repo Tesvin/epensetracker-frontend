@@ -28,18 +28,29 @@ function App() {
     }
   }
 
-
   return (
-    <div className="App h-screen bg-slate-500 relative">
-      <div className='p-8 flex h-full gap-8'>
+    <div className="App justify-center bg-slate-500">
+      <div className='p-8 pb-5 md:flex justify-center h-full gap-8'>
         <Navigation active={active} setActive={setActive}/>
-        <main className='flex-1 overflow-x-hidden border-4 border-white rounded-3xl'>
+        <main className='flex-1 h-screen bg-slate-500 overflow-x-hidden border-4 border-white rounded-3xl'>
           {displayData()}
         </main>
       </div>
     </div>
   );
   }
+
+  // return (
+  //   <div className="App h-screen bg-slate-500 relative">
+  //     <div className='p-8 md:flex h-full gap-8'>
+  //       <Navigation active={active} setActive={setActive}/>
+  //       <main className='flex-1 overflow-x-hidden border-4 border-white rounded-3xl'>
+  //         {displayData()}
+  //       </main>
+  //     </div>
+  //   </div>
+  // );
+  // }
 
 
 

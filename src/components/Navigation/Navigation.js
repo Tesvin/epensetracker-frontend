@@ -38,8 +38,9 @@ function Navigation({active, setActive}) {
 
 const NavStyled = styled.nav`
     padding: 2rem 1.5rem;
+    margin-bottom: 50px;
     width: 374px;
-    height: 100%;
+    height: 600px;
     background: rgba(252, 246, 249, 0.78);
     border: 3px solid #FFFFFF;
     backdrop-filter: blur(4.5px);
@@ -47,6 +48,7 @@ const NavStyled = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     gap: 2rem;
     .user-con{
         height: 100px;
