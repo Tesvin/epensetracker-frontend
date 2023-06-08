@@ -5,7 +5,7 @@ import axios from 'axios'
 // const BASE_URL = "https://expensetracker-backend-production-3d0f.up.railway.app/"
 // const BASE_URL = "http://localhost:3000/api/v1/";
 
-const BASE_URL = "https://expense-tracker-backend-cm54.onrender.com/"
+const BASE_URL = "https://expense-tracker-backend-cm54.onrender.com/api/v1/"
 
 const GlobalContext = React.createContext()
 
