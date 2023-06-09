@@ -34,7 +34,7 @@ function Dashboard() {
                                     {dollar} {totalExpenses()}
                                 </p>
                             </div>
-                            <div className="bg-[#FCF6F9] p-8 shadow-sm rounded-3xl border-[#FFFFFF] border-2 flex-col justify-center items-center flex col-span-3">
+                            <div className="bg-[#FCF6F9]  align-center; p-8 shadow-sm rounded-3xl border-[#FFFFFF] border-2 flex-col justify-center items-center flex col-span-3">
                                 <h2 className='text-2xl'>Total Balance</h2>
                                 <p className='text-4xl'>
                                     {dollar} {totalBalance()}
@@ -71,17 +71,18 @@ function Dashboard() {
 
 const DashboardStyled = styled.div`
     .stats-con{
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 2rem;
-        .chart-con{
-            grid-column: 1 / 4;
-            height: 400px;
+        //  display: grid;
+        //  grid-template-columns: repeat(5, 1fr);
+        //  gap: 2rem;
+        //   .chart-con{
+        //      grid-column: 1 / 4;
+        //      height: 400px;
             .amount-con{
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 2rem;
-                margin-top: 2rem;
+                // display: grid;
+                // grid-template-columns: repeat(4, 1fr);
+                // gap: 2rem;
+                    margin-top: 2rem;
+                
                 .income, .expense{
                     grid-column: span 2;
                 }
@@ -91,6 +92,7 @@ const DashboardStyled = styled.div`
                     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
                     border-radius: 20px;
                     padding: 1rem;
+                    margin: 2rem;
                     p{
                         font-size: 3.5rem;
                         font-weight: 700;
