@@ -1,4 +1,5 @@
 import './App.css';
+import styled from 'styled-components';
 import Navigation from './components/Navigation/Navigation';
 import Dashboard from './components/Dashboard/Dashboard'
 import Income from './components/Income/Income'
@@ -29,16 +30,25 @@ function App() {
   }
 
   return (
-    <div className="App justify-center bg-slate-500">
+    <AppStyled className="App justify-center bg-slate-500">
       <div className='p-8 pb-5 md:flex justify-center h-full gap-8'>
         <Navigation active={active} setActive={setActive}/>
         <main className='flex-1 h-screen bg-slate-500 overflow-x-hidden border-4 border-white rounded-3xl'>
           {displayData()}
         </main>
       </div>
-    </div>
+    </AppStyled>
   );
   }
+
+const AppStyled = styled.div`
+main{
+  overflow-x: hidden;
+  &::-webkit-scrollbar{
+    width: 0;
+  }
+}
+`
 
   // return (
   //   <div className="App h-screen bg-slate-500 relative">

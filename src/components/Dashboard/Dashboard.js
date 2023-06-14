@@ -74,9 +74,9 @@ const DashboardStyled = styled.div`
         //  display: grid;
         //  grid-template-columns: repeat(5, 1fr);
         //  gap: 2rem;
-        //   .chart-con{
-        //      grid-column: 1 / 4;
-        //      height: 400px;
+          .chart-con{
+            //  grid-column: 1 / 4;
+            //  height: 400px;
             .amount-con{
                 // display: grid;
                 // grid-template-columns: repeat(4, 1fr);

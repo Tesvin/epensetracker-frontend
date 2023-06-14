@@ -29,11 +29,11 @@ function Income() {
                                 title={title} 
                                 description={description} 
                                 amount={amount} 
-                                date={date} 
                                 type={type}
                                 category={category} 
                                 indicatorColor="var(--color-green)"
                                 deleteItem={deleteIncome}
+                                date={date} 
                             />
                         })}
                     </div>
@@ -44,10 +44,10 @@ function Income() {
 }
 
 const IncomeStyled = styled.div`
-    display: flex;
+    // display: flex;
     overflow: auto;
     .total-income{
-        display: flex;
+         display: flex;
         justify-content: center;
         align-items: center;
         background: #FCF6F9;
@@ -65,7 +65,7 @@ const IncomeStyled = styled.div`
         }
     }
     .income-content{
-        display: flex;
+        // display: flex;
         gap: 2rem;
         .incomes{
             flex: 1;

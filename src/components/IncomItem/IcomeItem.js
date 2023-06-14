@@ -91,6 +91,7 @@ function IncomeItem({
                             hColor={'var(--color-green)'}
                             onClick={() => deleteItem(id)}
                         />
+                        {/* <p>{calender} {dateFormat(date)}</p> */}
                     </div>
                 </div>
             </div>
